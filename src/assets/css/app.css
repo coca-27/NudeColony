@@ -1,0 +1,827 @@
+:root {
+    --primary: #214167;
+}
+
+@font-face {
+    font-family: "Retrograde";
+    src: url("../font/Retrograde-Regular.otf");
+}
+
+@font-face {
+    font-family: "Retrograde";
+    src: url("../font/Retrograde-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SourceCodePro";
+    src: url("../font/SourceCodePro-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SourceCodePro";
+    src: url("../font/SourceCodePro-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbf4d9;
+    font-family: 'SourceCodePro';
+    line-height: 1.3;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.btn {
+    padding: 14px 40px;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #214167;
+    color: #fdc2f6;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+.footer {
+    background-color: #ee5123;
+    padding: 20px 0;
+}
+
+.footer-title {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-bar {
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fefcf6;
+}
+
+.main-menu {
+    display: flex;
+}
+
+/* .mobile-menu {
+    display: none;
+} */
+
+.mobile-menu-toggler {
+    display: none;
+}
+
+.mobile-menu-toggler img {
+    width: 20px;
+    height: 20px;
+}
+
+.section {
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section.no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+.top-section-center {
+    padding: 20px 40px;
+}
+
+.img-snake {
+    margin-top: 80px;
+}
+
+.pink-box {
+    border: solid 4px #214167;
+    background-color: #fdc2f6;
+    box-shadow: -10px 10px 0 #214167;
+    padding: 30px 55px;
+}
+
+.center-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stretch-box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.box-title {
+    color: #ee5123;
+    text-transform: uppercase;
+    font-family: 'Retrograde';
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.countdown-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.countdown-icon.small {
+    width: 120px;
+    height: 120px;
+}
+
+.countdown-timer-value {
+    color: #305668;
+    font-family: 'Retrograde';
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.countdown-timer-label {
+    padding: 3px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.One-Month-Left-To-Th {
+    font-family: 'Retrograde';
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #68a56c;
+}
+
+.One-Month-Left-To-Th .text-style-1 {
+    background-color: #214167;
+    color: #ffaff6;
+}
+
+.Life-on-the-planet-w {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Life-on-the-planet-w .text-style-1 {
+    color: #ffaff6;
+}
+
+.pink-button {
+    font-family: 'Retrograde';
+    text-transform: uppercase;
+    padding: 18px 44px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    color: #214167;
+    position: relative;
+    z-index: 0;
+}
+
+.pink-button:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 2px solid #214167;
+    background-color: #fdc2f6;
+    z-index: -1;
+}
+
+.pink-button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 5px;
+    right: -10px;
+    bottom: -10px;
+    background-color: white;
+    border: 2px solid #214167;
+    z-index: -2;
+}
+
+.pink-button:hover {
+    color: #fdc2f6;
+}
+
+.pink-button:hover:before {
+    background-color: #214167;
+}
+
+.nude-input {
+    font-size: 16px;
+    padding: 16px;
+    width: 280px;
+    border: 2px solid #214167;
+}
+
+.modal-button {
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-title {
+    font-family: 'Retrograde';
+    font-size: 28px;
+    font-weight: bold;
+    color: #68a56c;
+}
+
+.section-sub-title {
+    font-family: 'Retrograde';
+    font-size: 20px;
+    font-weight: bold;
+    color: #214167;
+}
+
+.third-col-title {
+    font-family: 'Retrograde';
+    font-size: 22px;
+    font-weight: bold;
+    color: #68a56c;
+}
+
+.contact-name {
+    font-size: 14px;
+    color: #214167;
+    font-weight: bold;
+}
+
+.contact-pos {
+    font-size: 12px;
+    color: #68a56c;
+}
+
+a {
+    color: #214167 !important;
+}
+
+.header a, .mobile-menu a {
+    color: black !important;
+    font-weight: bold;
+}
+
+.header .nav.main-menu a {
+    padding: 0 10px;
+}
+
+.carousel-text {
+    color: #214167;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-btn {
+    margin-top: 40px;
+}
+
+.carousel-img {
+    height: 210px;
+    width: auto;
+}
+
+.carousel-img.wallet {
+    height: 140px;
+    width: auto;
+}
+
+.rare-1 {
+    height: 10px;
+    background-color: #509c53;
+}
+
+.rare-2 {
+    height: 10px;
+    background-color: #7fae71;
+}
+
+.rare-3 {
+    height: 10px;
+    background-color: #a8bf7b;
+}
+
+.rare-4 {
+    height: 10px;
+    background-color: #c5cb81;
+}
+
+.rare-5 {
+    height: 10px;
+    background-color: #fedf8c;
+}
+
+.rare-6 {
+    height: 10px;
+    background-color: #f8a863;
+}
+
+.rare-7 {
+    height: 10px;
+    background-color: #f37a41;
+}
+
+.rare-8 {
+    height: 10px;
+    background-color: #ef5727;
+}
+
+.tour-tt-bar {
+    width: 30px;
+    height: 6px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.tour-label {
+    font-family: 'Retrograde';
+    font-weight: bold;
+    color: #214167;
+    font-size: 14px;
+}
+
+.tour-count-label {
+    font-family: 'SourceCodePro';
+    font-weight: bold;
+}
+
+.rarety {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rarety .text-style-1 {
+    color: #fdc2f6;
+}
+
+.rarety .text-style-2 {
+    color: #68a56c;
+}
+
+.rarety-title{
+    font-family: Retrograde;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #214167;
+    margin-left: -15px;
+}
+
+.rarety-dst-item{
+    text-align: center;
+    transform: rotate(-90deg);
+    min-width: 130px;
+}
+
+.rarety-dst-NTFS{
+    font-family: Retrograde;
+    font-size: 24px;
+    font-weight: bold;
+    color: #214167;
+}
+
+.rarety-dst-NTFS span{
+    font-size: 16px;
+}
+
+.rarety-dst-ETH{
+    font-family: SourceCodePro;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.rect-dot {
+    width: 10px;
+    height: 10px;
+}
+
+.rect-dot.common {
+    background-color: #fedf8c;
+}
+
+.rect-dot.most-common {
+    background-color: #509c53;
+}
+
+.rect-dot.rare {
+    background-color: #f8a863;
+}
+
+.rect-dot.most-rare {
+    background-color: #ef5727;
+}
+
+.rarebar-box{
+    
+}
+
+.rarebar-mobile {
+    display: none;
+}
+
+.rarety-dst-box{
+    padding-top: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.rarety-dst-bar{
+    height: 26px;
+    background-color: #fdc2f6;
+    /* position: absolute; */
+    position: relative;
+}
+
+.rarety-dst-barback {
+    background-color: #dadada;
+    /* width: 100%; */
+    /* position: relative; */
+}
+
+.rarety-dst-bar:before{
+    height: 26px;
+    position: absolute;
+    background-color: #dadada;
+    width: 100%;
+}
+
+.rarety-dst-box img{
+    height: 60px;
+}
+
+.rarety-avatar1{
+    position: absolute;
+    bottom: -17px;
+    right: 12%;
+}
+
+.rarety-avatar2{
+    position: absolute;
+    bottom: -17px;
+    right: -15px;
+}
+
+.rarety-avatar3{
+    position: absolute;
+    bottom: -17px;
+    right: -40px;
+}
+
+.white-rec {
+    background-color: white;
+    border: solid 2px #214167;
+}
+
+.sub-title {
+    font-family: 'SourceCodePro';
+    font-size: 16px;
+    color: #214167;
+    font-weight: bold;
+}
+
+.code-pro-text {
+    font-family: 'SourceCodePro';
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.DROP-YOUR-E-MAIL {
+    width: 383px;
+    height: 41px;
+    font-family: Retrograde;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d0f0d2;
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #68a56c80;
+    display: table;
+    transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-container {
+    width: 600px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fefcf6;
+    box-shadow: -10px 10px 0 #214167;
+    border: solid 4px #214167;
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.pre-header {
+    margin: 40px 0;
+}
+
+.modal-header {
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Retrograde';
+    border-bottom: none;
+    color: #68a56c;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.modal-body {
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 0
+}
+
+.modal-footer {
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .section {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main-menu {
+        display: none;
+    }
+    .mobile-menu-toggler {
+       
+        display: block;
+    }
+
+    .rarety {
+        display: none;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .countdown-icon {
+        width: 140px;
+        height: 140px;
+    }
+
+    .countdown-timer-value {
+        font-size: 20px;
+    }
+
+    .One-Month-Left-To-Th {
+        font-size: 22px;
+    }
+
+    .Life-on-the-planet-w {
+        font-size: 14px;
+    }
+
+    .top-section-center {
+        padding: 30px 0;
+    }
+
+    .pink-box {
+        padding: 30px;   
+        box-shadow: -6px 6px 0 #214167;
+    }
+
+    .carousel-box {
+        width: 85%;
+        margin: auto;
+    }
+
+    .pink-button {
+        padding: 12px 30px;
+        font-size: 10px;
+    }
+
+    .carousel-img {
+        height: 80px;
+        width: auto;
+    }
+
+    .about-desc {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .arrow-block {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .why-block {
+        margin-left: 40px;
+    }
+
+    .third-col-title {
+        margin: 20px;
+    }
+
+    .footer-bar a {
+        display: block;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        left: 0;
+        top:0;
+        height: 100%;
+        width: 100%;
+        z-index: 10001;        
+        background-color: #68a56c80;
+    }
+
+    .mobile-menu-content {
+        position: relative;
+        top: 0;
+        left: 30%;
+        width: 70%;
+        height: 100%;
+        background-color: white;
+        padding-top: 50px;
+    }
+
+    
+    .mobile-menu .mobile-menu-item{
+        padding: 5px 30px;
+    }
+
+    
+    .mobile-menu-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 10002;
+    }
+
+    .mobile-menu-close img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .box-title {
+        font-size: 10px;
+    }
+
+    .modal-container {
+        width: 300px;
+    }
+
+    .modal-header {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .modal-body {
+        font-size: 12px;
+    }
+
+    .modal-footer {
+        margin-top: 15px;
+    }
+
+    .countdown-icon.small {
+        width: 100px;
+        height: 100px;
+    }
+
+    .rarebar-mobile {
+        display: flex;
+        width: 10px;
+        flex-direction: column;
+    }
+
+    .rarebar-mobile .rare-1, .rarebar-mobile .rare-2, .rarebar-mobile .rare-3, .rarebar-mobile .rare-4,
+    .rarebar-mobile .rare-5, .rarebar-mobile .rare-6, .rarebar-mobile .rare-7, .rarebar-mobile .rare-8{
+        width: 10px;
+        height: 100px !important;
+    }
+
+    .rarety-dst-item {
+        transform: none;
+    }
+    
+    .rarety-dst-box{
+        padding-top: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: static;
+        width: 100%;
+    }
+    .rarety-dst-NTFS, .rarety-dst-ETH {
+        text-align: left;
+    }
+
+    .rarety-dst-bar {
+        margin-bottom: 24px;
+    }
+
+    .rarety-avatar1{
+        position: relative;
+        /* top: 100px; */
+        left: 80%;
+        top: -350px;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+    }
+
+    .rarety-avatar2{
+        position: relative;
+        /* top: 150px; */
+        left: 80%;
+        top: -280px;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+    }
+
+    .rarety-avatar3{
+        position: relative;
+        /* top: 100px; */
+        left: 80%;
+        top: -200px;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+    }
+
+    .countdown-timer-label {
+        padding: 3px 5px;
+    }   
+}
